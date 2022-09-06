@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+    
+    <div class="container-fluid">
+        <h1>Compose post</h1>
+        <form action="/compose" method="post">
+            
+            <label for="postTitle">Title</label>
+            <input type="text" name="postTitle" />
+
+            <label for="postBody">post</label>
+            <textarea  type="text" name="postBody" id="" cols="30" rows="7"></textarea>
+
+            <button type="submit" class="btn btn-outline-dark " name="button">sdd to the list</button>
+        </form>
+    </div>
+<%- include("partials/footer") %>
