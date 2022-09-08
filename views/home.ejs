@@ -1,6 +1,24 @@
-<%- include ("partials/header") %> 
-<div class="container-fluid">
-<h1>home </h1>
-<%= homeContentEJS %> 
-</div>
-<%- include ("partials/footer") %> 
+<%- include ("partials/header") %>
+
+    <div class="container-fluid "id="main-content">
+        <h1>home </h1>
+        <%= homeContentEJS %>
+
+
+            <% blog.forEach(function(blogPost){%>
+                
+                            <h3>
+                                <%= blogPost.title %>
+                            </h3>
+                        
+                            <p>
+                                <%= blogPost.body.substring(0,99) %> ... 
+                            </p>
+<a href="/blogs/<%= blogPost.title %> ">read more</a>
+                   
+
+                    <% }); %>
+                
+    
+    </div>
+    <%- include ("partials/footer") %>
