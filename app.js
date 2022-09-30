@@ -71,7 +71,7 @@ app.post("/compose", function (req, res) {
   res.redirect("/");
 });
 
-//setting port no
-app.listen(3000, function () {
+//setting port no for heroku and local host
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server started on port 3000");
 });
