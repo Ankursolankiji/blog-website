@@ -1,6 +1,21 @@
 <%- include ("partials/header") %> 
-<div class="container-fluid">
-<h1>About us</h1>
-<%= aboutContentEJS %> 
+<div class="container-fluid "id="main-content"">
+
+
+
+<div class="about-container">
+
+<h1>About US</h1>
+    <div class="about">
+    <div class="about-image">
+        <img src="img/ankur.png" alt="">
+    </div>
+    <div class="about-info">
+        <h3>Ankur Solanki</h3>
+        <%= aboutContentEJS %> 
+    </div>
+    <a class="btn btn-lg btn-contact"  href="mailto:solanank@email.com" >Connect with me</a>
 </div>
-<%- include ("partials/footer") %> 
+</div>
+</div> 
+<%- include ("partials/footer") %>
