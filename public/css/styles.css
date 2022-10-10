@@ -22,8 +22,8 @@ h3{
     font-size: 12px;
     letter-spacing: 5px;
 }
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+.navbar-nav  li a{
+  color: #1abc9c !important;
 }
 
 #main-content{
@@ -85,11 +85,12 @@ form button{
     padding-bottom: 2.5rem;
    }
    .social-links a {
+    color:  #1abc9c;
     margin: 1rem;
      padding: 20px;
    }
    #footer{
-     color: var(--color-4);
+    color:  #1abc9c;
        text-align: center;
        margin-bottom: 2rem;
    }
